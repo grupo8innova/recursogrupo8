@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+<script src="aframe.min.js"></script>
+<script src="aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+		<a-assets>
+			<a-asset-item id="led" src="pruebacicuito.glb" ></a-asset-item>
+		</a-assets>
+		
+		<a-gltf-model src="#led"  ></a-gltf-model>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
+</html>
